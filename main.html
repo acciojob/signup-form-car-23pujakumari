@@ -10,46 +10,41 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-<form>
-	<label for="name">Name</label>
-	<input type="text" name="name" required><br><br>
+<form method="post">
+	<label for="name">Name*</label>
+	<input type="text" id="name" placeholder="Name" name="name" required><br><br>
 
-	<label for="email">Email</label>
-	<input type="email" name="email" required><br><br>
+	<label for="email">Email*</label>
+	<input type="email" id="email" placeholder="Name" name="email" required><br><br>
 
-	<label for="gender">Gender</label><br>
-	male:<input type="radio" name="gender" required>
-	female:<input type="radio" name="gender" required><br><br>
+	<label for="gender">Gender*</label>
+	male:<input type="radio" id="gender_m" name="gender" required>
+	female:<input type="radio" name="gender_f" name="gender" required><br><br>
 
-	<label for="carbrand">Car brands</label><br>
-	BMW:<input type="checkbox" name="carbrand" required>
-	Audi:<input type="checkbox" name="carbrand" required>
-	Mercedez:<input type="checkbox" name="carbrand" required><br><br>
+	<label for="carbrand">Car Brands*</label>
+	<select id="cars" required>
+		<option value="" disabled selected>--Please choose an option--</option>
+		<option value="bmw">BMW</option>
+		<option value="audi">Audi</option>
+		<option value="mercedez">Mercedez</option>
+	</select><br><br>
+		
+	<label for="age">Age*</label>
+	<input type="number" id="age" placeholder="Age" required><br><br>
 
-	<label for="age">Age</label>
-	<input type="number" name="age" maxlength="3" required><br><br>
+	<label for="dob">DOB*</label>
+	<input type="date" id="dob" required><br><br>
 
-	<label for="dob">DOB</label>
-	<input type="date" name="age" required><br><br>
+	<label for="tel">Phone Number</label>
+	<input type="tel" id="tel" placeholder="xxx-xxx-xxxx" required><br><br>
 
-	<label for="dob">DOB</label>
-	<input type="date" name="age" required><br><br>
+	<label for="pswd">Password*</label>
+	<input type="password" id="pswd" placeholder="Password" required><br><br>
 
-	<label for="phn">Phone Number</label>
-	<input type="number" maxlength="10" required><br><br>
+	<label for="tos">I agree to the TOS</label>
+	<input type="checkbox" id="tos" required><br><br>
 
-	<label for="pswd">Password</label>
-	<input type="password" maxlength="10" required><br><br>
-
-	<label for="chkbox">Checkbox</label>
-	<input type="checkbox" required><br><br>
-
-	<input type="submit" required>
-	
-
-
-	
-	
+	<button type="submit">submit</button>
 	
 </form>
 
